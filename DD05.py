@@ -28,7 +28,7 @@ print()
 while True:
 	sock.sendto(bytes, (ip,port))
 	print("Sent %s packet to %s through port: %s") % (sent,ip,port)
-	sent++
-	port++
+	sent =+ 1
+	port =+ 1
 	if port == 65534: # Once it reaches the max, go back to the min
 		port = 1
